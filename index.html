@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oman Hotel | Premium Stay</title>
+    <title>Oman Hotel | Premium Stay Gading Serpong</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -11,11 +11,13 @@
         body { font-family: 'Montserrat', sans-serif; background-color: #0f172a; color: #f8fafc; scroll-behavior: smooth; }
         .font-serif { font-family: 'Playfair Display', serif; }
         
+        /* Background Utama */
         .hero-bg {
-            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), 
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
                         url('IMG-20260207-WA0000.JPG');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
         }
     </style>
 </head>
@@ -28,41 +30,49 @@
     <nav class="fixed w-full z-40 p-5 flex justify-between items-center backdrop-blur-md bg-black/40 border-b border-white/10">
         <h1 class="text-xl font-serif font-bold tracking-widest text-yellow-500">OMAN HOTEL</h1>
         <div class="flex gap-4">
-            <a href="https://wa.me/6281400679910" target="_blank" class="bg-yellow-600 text-white px-4 py-2 rounded text-xs font-bold uppercase tracking-wider">Book Now</a>
+            <a href="https://wa.me/6281400679910" target="_blank" class="bg-yellow-600 text-white px-4 py-2 rounded text-xs font-bold uppercase tracking-wider hover:bg-yellow-500 transition">Book Now</a>
         </div>
     </nav>
 
     <header class="relative h-screen flex items-center justify-center text-center px-6 hero-bg">
         <div class="max-w-3xl">
+            <span class="text-yellow-500 font-semibold tracking-[0.3em] text-xs uppercase mb-4 block">Luxury Experience</span>
             <h2 class="text-5xl md:text-7xl font-serif mb-6 leading-tight">Modern Luxury In Gading Serpong</h2>
-            <p class="text-gray-300 text-sm md:text-lg mb-8">Nikmati perpaduan sempurna antara kemewahan modern dan kenyamanan sejati hanya di Oman Hotel.</p>
+            <p class="text-gray-300 text-sm md:text-lg mb-8 leading-relaxed">Nikmati perpaduan sempurna antara kemewahan modern dan kenyamanan sejati hanya di Oman Hotel. Destinasi menginap terbaik untuk istirahat Anda.</p>
             <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#about" class="bg-white text-black px-8 py-3 rounded font-bold transition hover:bg-gray-200">PELAJARI LEBIH LANJUT</a>
+                <a href="#about" class="bg-white text-black px-8 py-3 rounded font-bold transition hover:bg-gray-200">DETAIL UNIT</a>
+                <a href="https://www.instagram.com/ameliarooms" target="_blank" class="border border-white px-8 py-3 rounded font-bold hover:bg-white hover:text-black transition">INSTAGRAM</a>
             </div>
         </div>
     </header>
 
     <section id="about" class="py-20 px-6 max-w-6xl mx-auto">
         <div class="grid md:grid-cols-2 gap-12 items-center">
-            <img src="IMG-20260207-WA0000.JPG" alt="Unit Kamar" class="rounded-lg shadow-2xl">
+            <div class="relative">
+                <img src="IMG-20260207-WA0000.JPG" alt="Oman Hotel Room" class="rounded-lg shadow-2xl border border-white/10">
+                <div class="absolute -bottom-4 -right-4 bg-yellow-600 p-4 rounded-lg hidden md:block">
+                    <p class="text-white font-bold text-xl">Premium Room</p>
+                </div>
+            </div>
             <div>
-                <h3 class="text-3xl font-serif mb-6 text-yellow-500">Kamar Premium & Estetik</h3>
-                <p class="text-gray-400 leading-relaxed mb-6">Oman Hotel hadir dengan konsep hunian eksklusif. Setiap sudut ruangan dirancang untuk memberikan ketenangan maksimal bagi Anda.</p>
-                <ul class="space-y-3 mb-8 text-sm">
-                    <li><i class="fas fa-check text-yellow-500 mr-2"></i> Smart TV & High Speed WiFi</li>
-                    <li><i class="fas fa-check text-yellow-500 mr-2"></i> Premium Mood Lighting</li>
-                    <li><i class="fas fa-check text-yellow-500 mr-2"></i> Akses Strategis Gading Serpong</li>
+                <h3 class="text-4xl font-serif mb-6 text-yellow-500">Kenyamanan Eksklusif</h3>
+                <p class="text-gray-400 leading-relaxed mb-6">Oman Hotel dirancang untuk memberikan suasana hangat (warm mood) melalui pencahayaan estetik dan furnitur berkualitas. Sangat cocok bagi Anda yang mencari ketenangan di tengah hiruk pikuk kota.</p>
+                <ul class="grid grid-cols-2 gap-4 mb-8 text-sm text-gray-300">
+                    <li><i class="fas fa-check text-yellow-500 mr-2"></i> Smart TV Area</li>
+                    <li><i class="fas fa-check text-yellow-500 mr-2"></i> WiFi Kencang</li>
+                    <li><i class="fas fa-check text-yellow-500 mr-2"></i> Bed Premium</li>
+                    <li><i class="fas fa-check text-yellow-500 mr-2"></i> Spot Estetik</li>
                 </ul>
                 <div class="flex flex-wrap gap-4">
-                    <a href="https://wa.me/6281400679910" target="_blank" class="bg-green-600 px-6 py-2 rounded font-bold text-sm uppercase">Chat Admin</a>
-                    <a href="https://www.oyorooms.com/h/113779?latitude=-6.24778&longitude=106.6106&locale=id" target="_blank" class="border border-blue-500 text-blue-400 px-6 py-2 rounded font-bold text-sm uppercase">Cek OYO</a>
+                    <a href="https://wa.me/6281400679910" target="_blank" class="bg-green-600 text-white px-6 py-3 rounded font-bold hover:bg-green-500 transition shadow-lg">HUBUNGI VIA WHATSAPP</a>
                 </div>
+                <p class="mt-6 text-xs text-gray-500 italic">Lokasi: Springwood Residence, Gading Serpong.</p>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 border-t border-white/5 text-center text-gray-500 text-[10px] tracking-[0.3em]">
-        <p>&copy; 2026 OMAN HOTEL. DESIGNED BY MIFTA.</p>
+    <footer class="py-12 border-t border-white/5 text-center bg-black/20">
+        <p class="text-gray-500 text-[10px] tracking-[0.4em] uppercase">Oman Hotel &copy; 2026 | Designed by Mifta</p>
     </footer>
 
 </body>
