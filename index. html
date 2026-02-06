@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oman Hotel - Your Luxurious Retreat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap');
+        body { font-family: 'Montserrat', sans-serif; background-color: #0d1a26; color: #e2e8f0; scroll-behavior: smooth; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .accent-color { color: #b8860b; } /* Darker gold */
+        .bg-accent { background-color: #b8860b; }
+        .hero-bg {
+            background: linear-gradient(rgba(13, 26, 38, 0.75), rgba(13, 26, 38, 0.75)), 
+                        url('IMG-20260207-WA0000.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-item-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+            color: white;
+            padding: 1rem;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+        }
+        .floating-whatsapp:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/c/628951818766" target="_blank" class="floating-whatsapp" aria-label="WhatsApp Us">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <nav class="fixed w-full z-50 p-6 flex justify-between items-center backdrop-blur-md bg-black/40 border-b border-white/10">
+        <a href="#" class="text-3xl font-serif font-bold tracking-wider accent-color">OMAN HOTEL</a>
+        <div class="flex gap-6 items-center">
+            <a href="#about" class="text-gray-300 hover:text-white transition hidden md:block">Tentang Kami</a>
+            <a href="#rooms" class="text-gray-300 hover:text-white transition hidden md:block">Kamar & Suite</a>
+            <a href="#contact" class="text-gray-300 hover:text-white transition hidden md:block">Kontak</a>
+            <a href="https://wa.me/c/628951818766" target="_blank" class="bg-accent text-white px-5 py-2 rounded-md text-sm font-bold uppercase tracking-wide hover:bg-[#a37909] transition">Book Now</a>
+        </div>
+    </nav>
+
+    <header class="relative h-screen flex items-center justify-center text-center px-4 hero-bg">
+        <div class="max-w-4xl z-10">
+            <h2 class="text-5xl md:text-8xl font-serif mb-6 leading-tight text-white drop-shadow-lg">Selamat Datang di <span class="accent-color">Oman Hotel</span></h2>
+            <p class="text-gray-200 max-w-2xl mx-auto mb-12 text-lg md:text-xl leading-relaxed font-light">
+                Nikmati perpaduan sempurna antara kemewahan modern dan kenyamanan sejati. Pengalaman menginap tak terlupakan menanti Anda di jantung Gading Serpong.
+            </p>
+            <div class="flex flex-col md:flex-row gap-5 justify-center">
+                <a href="#rooms" class="bg-white text-gray-900 px-10 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-gray-200 transition">Jelajahi Kamar Kami</a>
+                <a href="https://wa.me/c/628951818766" target="_blank" class="border border-white text-white px-10 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-white hover:text-gray-900 transition">Booking Sekarang</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-24 px-6 bg-[#0f1a26]">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <img src="IMG-20260207-WA0000.jpg" alt="Hotel Interior" class="rounded-xl shadow-2xl border border-white/5 transform hover:scale-[1.02] transition-transform duration-500">
+            </div>
+            <div>
+                <h3 class="text-4xl font-serif mb-8 accent-color leading-tight">Pengalaman Menginap Tak Tertandingi</h3>
+                <p class="text-gray-300 text-lg mb-6 leading-relaxed">
+                    Oman Hotel didesain untuk memberikan Anda relaksasi dan kenyamanan. Setiap detail kami perhatikan, mulai dari furnitur modern yang elegan hingga pencahayaan hangat yang menenangkan, menciptakan suasana istirahat yang sempurna.
+                </p>
+                <p class="text-gray-400 text-md leading-relaxed">
+                    Terletak strategis di Gading Serpong, kami menawarkan akses mudah ke pusat perbelanjaan, kuliner, dan hiburan. Baik untuk perjalanan bisnis maupun liburan, Oman Hotel adalah pilihan ideal Anda.
+                </p>
+                <a href="https://www.oyorooms.com/h/113779?latitude=-6.24778&longitude=106.6106&locale=id" target="_blank" class="mt-8 inline-flex items-center gap-3 text-white bg-blue-600 px-6 py-3 rounded-md hover:bg-blue-700 transition">
+                    <i class="fas fa-hotel"></i> Cek Ketersediaan di OYO
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="rooms" class="py-24 px-6 bg-[#0d1a26]">
+        <div class="max-w-6xl mx-auto text-center">
+            <h3 class="text-4xl font-serif mb-12 accent-color">Kamar & Suite Kami</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="gallery-item">
+                    <img src="IMG-20260207-WA0000.jpg" alt="Deluxe Room">
+                    <div class="gallery-item-overlay">Kamar Deluxe</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1596386461350-ad29fba10f04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Executive Suite">
+                    <div class="gallery-item-overlay">Executive Suite</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1549294413-26f19527c928?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Premium Facilities">
+                    <div class="gallery-item-overlay">Fasilitas Premium</div>
+                </div>
+            </div>
+            <a href="https://wa.me/c/628951818766" target="_blank" class="mt-16 inline-block bg-accent text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#a37909] transition">Lihat Semua Ketersediaan</a>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 bg-[#0f1a26]">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-4xl font-serif mb-8 accent-color">Hubungi Kami</h3>
+            <p class="text-gray-300 text-lg mb-10 leading-relaxed">
+                Punya pertanyaan atau ingin melakukan reservasi langsung? Tim kami siap membantu Anda.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-8">
+                <a href="https://wa.me/c/628951818766" target="_blank" class="flex flex-col items-center bg-green-700 p-8 rounded-xl shadow-lg hover:bg-green-800 transition">
+                    <i class="fab fa-whatsapp text-5xl mb-4 text-white"></i>
+                    <span class="text-xl font-semibold text-white">WhatsApp</span>
+                    <span class="text-gray-200 mt-2">+62 895-1818-766</span>
+                </a>
+                <a href="https://www.instagram.com/ameliarooms?igsh=MXV1Zmhkdnl0Ymp5cQ==" target="_blank" class="flex flex-col items-center bg-pink-700 p-8 rounded-xl shadow-lg hover:bg-pink-800 transition">
+                    <i class="fab fa-instagram text-5xl mb-4 text-white"></i>
+                    <span class="text-xl font-semibold text-white">Instagram</span>
+                    <span class="text-gray-200 mt-2">@ameliarooms</span>
+                </a>
+            </div>
+            <div class="mt-16 text-gray-400">
+                <p class="mb-2"><strong>Lokasi Kami:</strong></p>
+                <p>Springwood Residence, Gading Serpong, Tangerang.</p>
+                <a href="https://www.oyorooms.com/h/113779?latitude=-6.24778&longitude=106.6106&locale=id" target="_blank" class="inline-flex items-center gap-2 text-blue-400 hover:underline mt-4">
+                    <i class="fas fa-map-marked-alt"></i> Lihat di Google Maps / OYO
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 border-t border-white/10 text-center bg-[#0d1a26]">
+        <p class="text-gray-600 text-[11px] tracking-widest uppercase">&copy; 2026 OMAN HOTEL. All Rights Reserved. Designed by Mifta.</p>
+    </footer>
+
+</body>
+</html>
